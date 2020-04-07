@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="head.additional">
+            <block ifconfig="magenest_frontend_options/google_font_options/enable"
+                   class="Magenest\FrontendOptions\Block\Head\Fonts"
+                   name="magenest.head.front.family" template="Magenest_FrontendOptions::head/font.phtml"/>
+
+            <block ifconfig="magenest_frontend_options/library/bootstrap"
+                   class="Magento\Framework\View\Element\Template"
+                   name="magenest.head.bootstrap" template="Magenest_FrontendOptions::head/library/bootstrap.phtml"/>
+
+            <block ifconfig="magenest_frontend_options/library/owl_carousel"
+                   class="Magento\Framework\View\Element\Template"
+                   name="magenest.head.owl_carousel" template="Magenest_FrontendOptions::head/library/owl_carousel.phtml"/>
+
+            <block ifconfig="magenest_frontend_options/library/animate" class="Magento\Framework\View\Element\Template"
+                   name="magenest.head.animate" template="Magenest_FrontendOptions::head/library/animate.phtml"/>
+
+            <block ifconfig="magenest_frontend_options/library/line_awesome"
+                   class="Magento\Framework\View\Element\Template"
+                   name="magenest.head.line_awesome" template="Magenest_FrontendOptions::head/library/line_awesome.phtml"/>
+        </referenceBlock>
+    </body>
+</page>
