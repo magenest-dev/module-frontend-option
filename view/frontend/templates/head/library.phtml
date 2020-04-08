@@ -1,0 +1,41 @@
+<?php
+/**
+ * Copyright © 2020 Magenest. All rights reserved.
+ * See COPYING.txt for license details.
+ *
+ * magento233_dev extension
+ * NOTICE OF LICENSE
+ *
+ * @category Magenest
+ * @package Magenest Module
+ * @author linhpv@magenest.com
+ */
+
+/** @var $block Magenest\FrontendOptions\Block\Head\Library */
+?>
+<?php if ($block->getConfigLibrary('animate')): ?>
+    <link rel="stylesheet" type="text/css"
+          href="<?php echo $block->getViewFileUrl('Magenest_FrontendOptions::css/owl.animate.css') ?>">
+<?php endif; ?>
+
+<?php if ($block->getConfigLibrary('bootstrap')): ?>
+    <link rel="stylesheet" type="text/css"
+          href="<?php echo $block->getViewFileUrl('Magenest_FrontendOptions::css/bootstrap.css') ?>">
+<?php endif; ?>
+
+<?php if ($block->getConfigLibrary('owl_carousel')): ?>
+    <link rel="stylesheet" type="text/css"
+          href="<?php echo $block->getViewFileUrl('Magenest_FrontendOptions::css/owl.carousel.css') ?>">
+<?php endif; ?>
+
+<?php if ($block->getConfigLibrary('font_awesome')): ?>
+    <link rel="stylesheet" type="text/css"
+          href="<?php echo $block->getViewFileUrl('Magenest_FrontendOptions::css/fontawesome.css') ?>">
+<?php endif; ?>
+
+<?php if ($block->getConfigLibrary('line_awesome')): ?>
+    <link rel="stylesheet" type="text/css"
+          href="<?php echo $block->getViewFileUrl('Magenest_FrontendOptions::css/line-awesome.css') ?>">
+
+<?php endif; ?>
+
