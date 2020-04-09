@@ -1,15 +1,14 @@
 <?php
 /**
- * Copyright © 2015 Magenest. All rights reserved.
+ * Copyright © 2020 Magenest. All rights reserved.
  * See COPYING.txt for license details.
  *
- *
- * Magenest_Widget extension
+ * Frontend Options extension
  * NOTICE OF LICENSE
  *
- * @category  Magenest
- * @package   Magenest_Widget
- * @author ThaoPV
+ * @category Magenest
+ * @package Magenest_FrontendOptions
+ * @author linhpv@magenest.com
  */
 
 \Magento\Framework\Component\ComponentRegistrar::register(
