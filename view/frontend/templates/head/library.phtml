@@ -15,7 +15,7 @@
 ?>
 <?php if ($block->getConfigLibrary('animate')): ?>
     <link rel="stylesheet" type="text/css"
-          href="<?php echo $block->getViewFileUrl('Magenest_FrontendOptions::css/owl.animate.css') ?>">
+          href="<?php echo $block->getViewFileUrl('Magenest_FrontendOptions::css/animate.css') ?>">
 <?php endif; ?>
 
 <?php if ($block->getConfigLibrary('bootstrap')): ?>
@@ -31,6 +31,11 @@
 <?php if ($block->getConfigLibrary('font_awesome')): ?>
     <link rel="stylesheet" type="text/css"
           href="<?php echo $block->getViewFileUrl('Magenest_FrontendOptions::css/fontawesome.css') ?>">
+<?php endif; ?>
+
+<?php if ($block->getConfigLibrary('font_awesome_v4')): ?>
+    <link rel="stylesheet" type="text/css"
+          href="<?php echo $block->getViewFileUrl('Magenest_FrontendOptions::css/font-awesome.css') ?>">
 <?php endif; ?>
 
 <?php if ($block->getConfigLibrary('line_awesome')): ?>

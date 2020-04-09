@@ -1,6 +1,6 @@
 {
   "name": "magenest/module-frontend-option",
-  "description": "FrontendOption extension by Magenest",
+  "description": "Frontend Options extension by Magenest",
   "type": "magento2-module",
   "version": "1.0.1",
   "license": [

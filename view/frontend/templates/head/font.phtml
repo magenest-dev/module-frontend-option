@@ -14,12 +14,15 @@
  */
 $urlGoogleFront = $block->getGoogleFont();
 $fontName = $block->getFontName();
+$canApplyGoogleFont = $block->canApplyGoogleFont();
 ?>
 <?php if ($fontName && $urlGoogleFront): ?>
-    <style>
-        body {
-            font-family: <?=$fontName?> !important;
-        }
-    </style>
     <link href="<?= $urlGoogleFront ?>" rel="stylesheet">
+    <?php if ($canApplyGoogleFont): ?>
+        <style>
+            body {
+                font-family: <?=$fontName?> !important;
+            }
+        </style>
+    <?php endif; ?>
 <?php endif; ?>

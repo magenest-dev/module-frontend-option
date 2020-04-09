@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <magenest_frontend_options>
+            <library>
+                <active_library>0</active_library>
+            </library>
+            <google_font_options>
+                <enable>0</enable>
+                <apply_font>0</apply_font>
+            </google_font_options>
+        </magenest_frontend_options>
+    </default>
+</config>

@@ -43,4 +43,8 @@ class Fonts extends \Magento\Framework\App\Helper\AbstractHelper
         $fontName = $this->scopeConfig->getValue('magenest_frontend_options/google_font_options/font_family', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
         return $fontName;
     }
+
+    public function canApplyGoogleFont(){
+        return $this->scopeConfig->getValue('magenest_frontend_options/google_font_options/apply_font', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+    }
 }
