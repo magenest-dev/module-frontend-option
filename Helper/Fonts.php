@@ -3,12 +3,12 @@
  * Copyright © 2020 Magenest. All rights reserved.
  * See COPYING.txt for license details.
  *
- * cf_theme extension
+ * Frontend Options extension
  * NOTICE OF LICENSE
  *
  * @category Magenest
- * @package cf_theme
- * @package linhphung
+ * @package Magenest_FrontendOptions
+ *
  */
 
 namespace Magenest\FrontendOptions\Helper;
@@ -42,5 +42,9 @@ class Fonts extends \Magento\Framework\App\Helper\AbstractHelper
     {
         $fontName = $this->scopeConfig->getValue('magenest_frontend_options/google_font_options/font_family', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
         return $fontName;
+    }
+
+    public function canApplyGoogleFont(){
+        return $this->scopeConfig->getValue('magenest_frontend_options/google_font_options/apply_font', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
     }
 }

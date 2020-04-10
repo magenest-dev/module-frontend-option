@@ -3,12 +3,12 @@
  * Copyright © 2020 Magenest. All rights reserved.
  * See COPYING.txt for license details.
  *
- * cf_theme extension
+ * Frontend Options extension
  * NOTICE OF LICENSE
  *
  * @category Magenest
- * @package cf_theme
- * @package linhphung
+ * @package Magenest_FrontendOptions
+ *
  */
 
 namespace Magenest\FrontendOptions\Block\Head;
@@ -48,6 +48,10 @@ class Fonts extends \Magento\Framework\View\Element\Template
     public function getFontName()
     {
         return $this->_fontsHelper->getFrontName();
+    }
+
+    public function canApplyGoogleFont(){
+        return $this->_fontsHelper->canApplyGoogleFont();
     }
 
     public function toHtml()

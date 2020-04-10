@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2020 Magenest. All rights reserved.
+ * See COPYING.txt for license details.
+ *
+ *
+ * Frontend Options extension
+ * NOTICE OF LICENSE
+ *
+ * @category  Magenest
+ * @package   Magenest_FrontendOptions
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <magenest_frontend_options>
+            <library>
+                <active_library>0</active_library>
+            </library>
+            <google_font_options>
+                <enable>0</enable>
+                <apply_font>0</apply_font>
+            </google_font_options>
+        </magenest_frontend_options>
+    </default>
+</config>

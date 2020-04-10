@@ -1,4 +1,18 @@
 <?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2020 Magenest. All rights reserved.
+ * See COPYING.txt for license details.
+ *
+ *
+ * Frontend Options extension
+ * NOTICE OF LICENSE
+ *
+ * @category  Magenest
+ * @package   Magenest_FrontendOptions
+ *
+ */
+-->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
         <section id="magenest_frontend_options" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
@@ -6,41 +20,48 @@
             <tab>magenest</tab>
             <resource>Magenest_FrontendOptions::FrontendOptionsSettings</resource>
             <group id="library" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Library</label>
+                <label>Css Library</label>
                 <field id="active_library" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Enable</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
                 <field id="bootstrap" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Bootstrap</label>
+                    <label>Bootstrap v4.4.1</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <depends>
                         <field id="active_library">1</field>
                     </depends>
                 </field>
-                <field id="owl_carousel" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Owl Carousel</label>
+                <field id="owl_carousel" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Owl Carousel v2.3.4</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <depends>
                         <field id="active_library">1</field>
                     </depends>
                 </field>
-                <field id="animate" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Animate</label>
+                <field id="animate" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Animate v3.7.2</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <depends>
                         <field id="active_library">1</field>
                     </depends>
                 </field>
-                <field id="line_awesome" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Line Awesome</label>
+                <field id="line_awesome" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Line Awesome v1.3.0</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <depends>
                         <field id="active_library">1</field>
                     </depends>
                 </field>
-                <field id="font_awesome" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Font Awesome</label>
+                <field id="font_awesome" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Font Awesome v5.13.0</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="active_library">1</field>
+                    </depends>
+                </field>
+                <field id="font_awesome_v4" translate="label" type="select" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Font Awesome v4.7.0</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <depends>
                         <field id="active_library">1</field>
@@ -48,7 +69,7 @@
                 </field>
             </group>
             <group id="google_font_options" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Google Font Options</label>
+                <label>Google Fonts</label>
                 <field id="enable" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Enable</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
@@ -58,6 +79,16 @@
                     <source_model>Magenest\FrontendOptions\Model\Config\Source\Googlefonts</source_model>
                     <comment><![CDATA[ Set font family for H1 heading. Example: Questrial. Please check <a href="https://developers.google.com/fonts/docs/getting_started" target="_blank" >this</a> for more details on google fonts]]>
                     </comment>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
+                </field>
+                <field id="apply_font" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Apply Font</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
                 </field>
             </group>
         </section>
