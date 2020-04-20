@@ -3,12 +3,12 @@
  * Copyright © 2020 Magenest. All rights reserved.
  * See COPYING.txt for license details.
  *
- * magento233_dev extension
+ * Frontend Options extension
  * NOTICE OF LICENSE
  *
  * @category Magenest
- * @package Magenest Module
- * @author linhpv@magenest.com
+ * @package Magenest_FrontendOptions
+ *
  */
 
 namespace Magenest\FrontendOptions\Block\Head;
